@@ -1,0 +1,109 @@
+* {margin:0;padding:0;
+   text-transform:capitalize;
+   box-sizing:border-box;
+   transition: all 0.2s linear;
+   font-family:'Poppins',sans-serif;
+   scroll-behavior:smooth;
+   list-style-type:none;
+   text-decoration:none !important;}
+
+*::selection {background:#fff;}
+
+body {overflow-x:hidden;}
+
+:root {--primary-color:#6923D0;
+       --primary-color1:#f4f0fa;
+       --primary-color2:#58555e;
+       --first-color-light:#4b0ea7;
+
+       --light-blue:rgb(0, 162, 255);
+    
+       --title-color:#19181b;
+       --color-light:#f9f6fd;
+       --gray:#8d8d8d;
+       --gray-dark:#343a40;
+       --light:#f8f9fa;
+       --dark:#343a40;
+
+       --font-mont:'Mont', cursive;
+       --font-Rale: 'Rale', cursive;
+
+       --box-shadow:0 0 .5rem #090a0a7a;
+       --box-shadow2:0 .5rem 1.5rem #0d2e2e23;
+       --box-shadow3:0 .3rem 4rem #252c2c2f;
+       --box-shadow4:0 0 4px #000;
+       --box-shadow5:5px 5px 5px #eee;}
+
+
+/************************ 
+  # Start Form Section
+************************/
+.form-section {background:linear-gradient(rgba(0,0,0,0.7),#3551b5), url(../img/house2.jpg);
+               width:100%;
+               background-size:cover;
+               background-repeat:no-repeat;
+               background-position:center;
+               height:90vh;
+               display:flex;
+               text-align:center;
+               align-items:center;
+               justify-content:center;}
+
+.form-section form {width:70%;}
+
+.form-section form .inputgroup {margin-bottom:1.4rem;
+                                position:relative;}
+
+.form-section form input, textarea {width:100%;
+                                    outline:none;
+                                    border:1px solid #fff;
+                                    resize:none;
+                                    padding:0.1rem 0.4rem;
+                                    background:transparent;
+                                    color:#fff;
+                                    font-size:1rem;}
+
+.form-section form .inputgroup label {color:#fff;
+                                      position:absolute;
+                                      top:0;left:0;
+                                      padding:4px 7px;
+                                      cursor:text;
+                                      transition:all 0.3s linear;}
+
+.form-section form .inputgroup input:focus ~ label, 
+.form-section form .inputgroup input:valid ~ label,
+.form-section form .inputgroup textarea:focus ~ label,
+.form-section form .inputgroup textarea:valid ~ label {top:-1.7rem;}
+
+
+
+.form-section form .row {display:flex;
+                         align-items:center;
+                         justify-content:space-between;}
+
+.form-section form .row .inputgroup {flex-basis:50%;}
+
+.form-section form .row .inputgroup label {padding:4px 19px;}
+
+.form-section form button {padding:0.3rem 1rem;
+                           width:100%;
+                           outline:none;
+                           border:1px solid #fff;
+                           text-transform:uppercase;
+                           font-weight:700;
+                           color:#fff;
+                           background:transparent;
+                           transition:all 0.3s linear;
+                           position:relative;}
+
+
+.form-section form button:hover {background:var(--light-blue);
+                                 border:1px solid var(--light-blue);}
+
+.form-section form button .fa-paper-plane {position:absolute;
+                                           top:50%;
+                                           transform:translateY(-50%);
+                                           left:55%;
+                                           transition:all 0.3s linear;}
+
+.form-section form button:hover .fa-paper-plane {left:56%;}
